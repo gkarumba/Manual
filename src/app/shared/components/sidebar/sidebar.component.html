@@ -1,23 +1,36 @@
 <mat-nav-list>
     <div class="profile-card">
         <div class="header">
-            <h2>Soufiane FADIL</h2>
-            <h4>example@email.com</h4>
+            <h3>USER GUIDE</h3>
         </div>
-        <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL">
+        <div class = "tp-container">
+            <form class="example-form">
+                <mat-form-field appearance = "outline">
+                  <mat-label>Search in user guide</mat-label>
+                  <input matInput [formControl]="searchControl" placeholder="Search in user guide">
+                  </mat-error>
+                </mat-form-field>
+              </form>
+         </div>
+        <!-- <img src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Soufiane FADIL"> -->
     </div>
 
     <mat-divider></mat-divider>
 
-    <h2 matSubheader>Pages</h2>
+    <!-- <h2 matSubheader>Pages</h2> -->
 
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Dashboard</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts">Posts</a>
-    <a mat-list-item routerLinkActive="list-item-active" routerLink="/articles">Articles</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/">Home</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/core-banking">Core Banking</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/customer-inquiry">Customer Inquiry</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/customer-journey">Customer Journey</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/loan-management">Loan Management</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/reports">Reports</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/sacco-management">Sacco Management</a>
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/user-management">User Management</a>
 
-    <mat-divider></mat-divider>
+    <!-- <mat-divider></mat-divider> -->
 
-    <h2 matSubheader>Tools</h2>
+    <!-- <h2 matSubheader>Tools</h2>
 
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
         <mat-icon>import_contacts</mat-icon>
@@ -27,6 +40,6 @@
     <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts">
         <mat-icon>contact_phone</mat-icon>
         Leads
-    </a>
+    </a> -->
 
 </mat-nav-list>
